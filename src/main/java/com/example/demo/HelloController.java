@@ -13,4 +13,8 @@ public class HelloController {
     public String hello() {
         return "Hello from Private Subnet! 3-Tier 아키텍처 백엔드 호출에 성공했습니다. 🚀";
     }
+    @GetMapping("/health")
+    public String health() {
+        return "OK";
+    }
 }
